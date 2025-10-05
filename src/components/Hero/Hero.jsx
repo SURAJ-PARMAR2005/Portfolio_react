@@ -9,7 +9,8 @@ const Hero = () => {
       <p>I am a student at G.L.BAJAJ Insitute of technology and management.</p>
       <div className="hero-action">
         <div className="hero-connect">
-            <AnchorLink className='anchor-link' offset={50} href='#contact'>Contact With Me</AnchorLink>
+            {/* <AnchorLink className='anchor-link' offset={50} href='#contact'>Contact With Me</AnchorLink> */}
+          <a className='anchor-link' href='https://github.com/SURAJ-PARMAR2005'>Github</a>
         </div>
         <a href={assets.resume} download={assets.resume} className="hero-resume">My Resume</a>
           

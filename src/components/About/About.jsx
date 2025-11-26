@@ -14,9 +14,10 @@ const About = () => {
         </div>
         <div className="about-right">
             <div className="about-para">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro repudiandae delectus ea dolores accusamus nihil suscipit saepe commodi sit veniam doloremque, reprehenderit laborum totam pariatur incidunt error, dolorum obcaecati modi?</p>
-                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil deleniti corrupti repellat repudiandae mollitia cupiditate, eos ipsa, aperiam unde quidem odio, delectus minima incidunt sit praesentium ut ad debitis ipsum.</p>
+                <p>I’m Suraj — a full-stack web developer who enjoys building user-centered websites and web apps. I prefer clean, maintainable code and fast performance, and I’m always iterating on UI details to make interfaces feel a little more human. I like working with HTML, CSS, and JavaScript and I’m constantly learning new libraries and tools to stay sharp.</p>
+                 <p>When I need a break from the screen, I play basketball and explore new technologies — both keep my problem-solving fresh. If you want someone who can ship reliable front-end work and thinks about UX, performance, and scalability, let’s talk.</p>
             </div>
+          
             <div className="about-skills">
                 <div className="about-skill">
                     <p>HTML & CSS</p>

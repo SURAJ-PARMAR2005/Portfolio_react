@@ -1,128 +1,133 @@
-.mywork{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content:center;
-
-    /* gap:80px; */
-    width:100%;
-    padding:80px 0;
-    /* margin:80px 10%; */
+.mywork {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 80px 10%; /* Added horizontal padding for better spacing on large screens */
+    box-sizing: border-box; /* Ensure padding is included in width */
 }
 
-.title-box{
-    position:relative;
-    margin-bottom:80px;
+.title-box {
+    position: relative;
+    margin-bottom: 80px;
 }
 
-.title-box h1{
-    padding:0px 30px;
-    font-size:60px;
-    font-weight:600;
+.title-box h1 {
+    padding: 0px 30px;
+    font-size: 60px;
+    font-weight: 600;
 }
 
-.title-box img{
-    width:160px;
-    position:absolute;
-    bottom:0;
-    right:0;
-    z-index:-1;
+.title-box img {
+    width: 160px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
 }
 
-.mywork-container{
-    display:grid;
-    justify-content:center;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap:30px;
-
+.mywork-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* Responsive grid */
+    gap: 40px; /* Increased gap */
+    width: 100%;
 }
 
-.project{
-    width:320px;
-    /* height:200px; */
-    /* border:1px solid white; */
-    display:flex;
-    flex-direction:column;
-    justify-content:space-between;
-    text-align:center;
-    padding:20px
-    border-radius:15px;
-    /* cursor:pointer; */
-    transition:0.3s;
+.project {
+    /* width: 320px; Removed fixed width */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    padding: 20px;
+    border-radius: 15px;
+    transition: 0.3s;
+    background: rgba(255, 255, 255, 0.05); /* Subtle background for better card definition */
+    border: 1px solid rgba(255, 255, 255, 0.1); /* Subtle border */
 }
 
-.project img{
-    width:100%;
-    height:70%;
-    object-fit:contain;
-    border-radius:10px;
-    transition:0.3s;
-}
-.project img:hover{
-    border:4px solid #ff00ff;
-}
-.ancher-links{
-  
-    display:flex;
-    gap:30px;
-    margin-left:15px;
+.project:hover {
+    transform: translateY(-10px); /* Lift effect on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-.ancher-links a{
-    text-decoration:none;
-    color:white;
-    padding:20px 30px;
-    border-radius:50px;
-    margin-top:20px;
+.project img {
+    width: 100%;
+    height: auto; /* Allow height to adjust */
+    aspect-ratio: 16/9; /* Maintain aspect ratio */
+    object-fit: cover; /* Cover the area */
+    border-radius: 10px;
+    transition: 0.3s;
+    margin-bottom: 20px;
 }
 
-.Live-Demo{
-    background:linear-gradient(270deg, #DF8908 10%, #B415FF 100%); 
-    cursor:pointer;
-    transition:0.3s;
-
+.project img:hover {
+    transform: scale(1.05); /* Slight zoom on image hover */
 }
 
-.Live-Demo:hover{
-border:2px solid #fff;
+.ancher-links {
+    display: flex;
+    gap: 20px;
+    justify-content: center; /* Center links */
+    margin-top: auto; /* Push to bottom */
 }
 
-.github{
-    border:2px solid white;
-    cursor:pointer;
-    transition:0.3s;
-
+.ancher-links a {
+    text-decoration: none;
+    color: white;
+    padding: 12px 25px; /* Adjusted padding */
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 500;
 }
 
-.github:hover{
-    border:2px solid #B415FF;
+.Live-Demo {
+    background: linear-gradient(270deg, #DF8908 10%, #B415FF 100%);
+    cursor: pointer;
+    transition: 0.3s;
+    border: 2px solid transparent; /* Reserve space for border */
 }
 
-@media(max-width:768px){
-    .mywork{
-       gap:50px;
-       margin:50px 70px;
-       align-items:start; 
-    }
-    .title-box h1{
-        padding:0;
-        font-size:50px;
-        font-weight:600;
+.Live-Demo:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(180, 21, 255, 0.5);
+}
 
-    }
+.github {
+    border: 2px solid white;
+    cursor: pointer;
+    transition: 0.3s;
+}
 
-    .title-box img{
-        width:130px;
-        margin-right:-20px;
+.github:hover {
+    border-color: #B415FF;
+    background: rgba(180, 21, 255, 0.1);
+    transform: scale(1.05);
+}
+
+@media(max-width: 768px) {
+    .mywork {
+        padding: 50px 5%; /* Adjusted padding for mobile */
+        gap: 50px;
     }
 
-    .mywork-container{
-        grid-template-columns : 1fr;
-        gap:30px;
-    }
-    .project img{
-        width:100%;
-        height:100%;
+    .title-box h1 {
+        padding: 0;
+        font-size: 40px; /* Smaller font on mobile */
     }
 
+    .title-box img {
+        width: 100px;
+        margin-right: -10px;
+    }
+
+    .mywork-container {
+        grid-template-columns: 1fr; /* Single column on mobile */
+        gap: 30px;
+    }
+    
+    .project {
+        padding: 15px;
+    }
 }

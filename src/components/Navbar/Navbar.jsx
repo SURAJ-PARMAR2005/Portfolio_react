@@ -2,6 +2,8 @@ import './Navbar.css';
 import {useRef, useState} from "react";
 import {assets} from '../../assets/assets';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
+import { useGSAP } from '@gsap/react';
+import gsap from 'gsap';
 const Navbar = () => {
   const [menu,setMenu] = useState("home");
   const menuRef = useRef();
@@ -11,6 +13,25 @@ const Navbar = () => {
     const closeMenu = () => {
     menuRef.current.style.right="-350px";
   }
+
+  useGSAP(() => {
+    const tl = gsap.timeline();
+    tl.from(".nav-logo",{
+    y:-30,
+    opacity:0,
+    duration:1,
+    delay:0.5,
+    })
+    
+    tl.from(".anchor-link",{
+      y:-30,
+      opacity:0,
+      duration:1,
+      stagger:0.3
+    })
+
+  })
+
   return (
     <div className='navbar'>
         <img src={assets.logo} className='nav-logo' alt=" " />

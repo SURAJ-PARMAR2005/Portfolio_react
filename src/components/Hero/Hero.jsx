@@ -1,10 +1,17 @@
 import './Hero.css';
 import { assets } from '../../assets/assets';
+
 import AnchorLink from 'react-anchor-link-smooth-scroll';
+import { useGSAP } from '@gsap/react';
+import gsap from 'gsap';
 const Hero = () => {
+  useGSAP(() =>{
+    gsap.from
+  })
   return (
     <div id='home' className='hero'>
-      <img src={assets.profile_img} alt=" " className="profile_img" />
+      <div className="profile_wrapper"> <img src={assets.profile_img} alt=" " className="profile_img" /></div>
+     
       <h1><span>I'm Suraj Parmar,</span>Full Stack Developer Based In India.</h1>
       <p>I am a student at G.L.BAJAJ Insitute of technology and management.</p>
       <div className="hero-action">

@@ -19,8 +19,8 @@ const Navbar = () => {
     tl.from(".nav-logo",{
     y:-30,
     opacity:0,
-    duration:1,
-    delay:0.5,
+    duration:0.5,
+    delay:0.2,
     })
     
     tl.from(".anchor-link",{

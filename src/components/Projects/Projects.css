@@ -86,12 +86,12 @@
     background: linear-gradient(270deg, #DF8908 10%, #B415FF 100%);
     cursor: pointer;
     transition: 0.3s;
-    border: 2px solid transparent; /* Reserve space for border */
+    /* border: 2px solid transparent; Reserve space for border */
 }
 
 .Live-Demo:hover {
     transform: scale(1.05);
-    box-shadow: 0 0 15px rgba(180, 21, 255, 0.5);
+    box-shadow: 0 0 16px rgba(180, 21, 255, 0.5);
 }
 
 .github {

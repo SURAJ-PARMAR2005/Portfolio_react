@@ -5,9 +5,9 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 const Hero = () => {
-  useGSAP(() =>{
-    gsap.from
-  })
+  // useGSAP(() =>{
+  //   gsap.from
+  // })
   return (
     <div id='home' className='hero'>
       <div className="profile_wrapper"> <img src={assets.profile_img} alt=" " className="profile_img" /></div>

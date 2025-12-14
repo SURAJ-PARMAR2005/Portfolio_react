@@ -13,3 +13,22 @@ body{
     background-color: black;
     font-family:'outfit';
 }
+
+.cursor{
+     height:20px;
+    width:20px;
+    background-color:white;
+    border-radius:50%;
+    position:fixed;
+    font-size:5px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    z-index:9999;
+    pointer-events:none;
+}
+
+.main{
+    min-height:100vh;
+}

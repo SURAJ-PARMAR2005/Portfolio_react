@@ -4,6 +4,7 @@ import theme_pattern from './theme_pattern.svg';
 import about_profile from "./about_profile.jpg";
 import project1 from "./project1.png";
 import project2 from "./project2.png";
+import project3 from "./Project3.png";
 import mail_icon from './mail_icon.svg';
 import call_icon from "./call_icon.svg";
 import location_icon from './location_icon.svg'
@@ -28,5 +29,5 @@ export const assets = {
     resume,
     menu_close,
     menu_open,
-
+    project3
 };

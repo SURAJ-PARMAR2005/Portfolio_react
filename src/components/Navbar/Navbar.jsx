@@ -4,7 +4,7 @@ import {assets} from '../../assets/assets';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
-const Navbar = () => {
+const Navbar = ({cursorEnter,cursorLeave}) => {
   const [menu,setMenu] = useState("home");
   const menuRef = useRef();
   const openMenu = () => {
@@ -38,10 +38,10 @@ const Navbar = () => {
         <img src={assets.menu_open}  onClick={openMenu} alt="" className='nav-mob-open' />
         <ul ref={menuRef}  className='nav-menu'>
           <img src={assets.menu_close} onClick={closeMenu} className='nav-mob-close' alt="" />
-            <li><AnchorLink className='anchor-link' href='#home'><p onClick={() => setMenu("home") }>Home</p></AnchorLink>{menu==="home"?<img src={assets.underline} alt="" />:<></>}</li>
-            <li><AnchorLink className='anchor-link' offset={50} href='#about'><p onClick={() => setMenu("about") }>About</p></AnchorLink>{menu==="about"?<img src={assets.underline} alt="" />:<></>}</li>
-            <li><AnchorLink className='anchor-link' offset={50} href='#projects'><p onClick={() => setMenu("Projects") }>Projects</p></AnchorLink>{menu==="Projects"?<img src={assets.underline} alt="" />:<></>}</li>
-            <li><AnchorLink className='anchor-link' offset={50} href='#contact'><p onClick={() => setMenu("Contact") }>Contact</p></AnchorLink>{menu==="Contact"?<img src={assets.underline} alt="" />:<></>}</li>
+            <li><AnchorLink className='anchor-link' href='#home'><p  onMouseEnter={() => cursorEnter("Go Home")} onMouseLeave={cursorLeave} onClick={() => setMenu("home") }>Home</p></AnchorLink>{menu==="home"?<img src={assets.underline} alt="" />:<></>}</li>
+            <li><AnchorLink className='anchor-link' offset={50} href='#about'><p onMouseEnter={() => cursorEnter("About Me")} onMouseLeave={cursorLeave} onClick={() => setMenu("about") }>About</p></AnchorLink>{menu==="about"?<img src={assets.underline} alt="" />:<></>}</li>
+            <li><AnchorLink className='anchor-link' offset={50} href='#projects'><p onMouseEnter={() => cursorEnter("My Work")} onMouseLeave={cursorLeave} onClick={() => setMenu("Projects") }>Projects</p></AnchorLink>{menu==="Projects"?<img src={assets.underline} alt="" />:<></>}</li>
+            <li><AnchorLink className='anchor-link' offset={50} href='#contact'><p onMouseEnter={() => cursorEnter("Contact Me")} onMouseLeave={cursorLeave} onClick={() => setMenu("Contact") }>Contact</p></AnchorLink>{menu==="Contact"?<img src={assets.underline} alt="" />:<></>}</li>
         </ul>
       <div className="nav-connect">
         <AnchorLink className='anchor-link' offset={50} href='#contact'>Contact With Me</AnchorLink>

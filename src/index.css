@@ -32,3 +32,7 @@ body{
 .main{
     min-height:100vh;
 }
+.cursor-text{
+    color:black;
+    font-weight:600;
+}

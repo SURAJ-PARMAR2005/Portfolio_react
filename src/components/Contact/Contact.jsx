@@ -1,7 +1,7 @@
 import './Contact.css'
 import { assets } from '../../assets/assets'
 
-const Contact = () => {
+const Contact = ({cursorEnter,cursorLeave}) => {
 
    const onSubmit = async (event) => {
     // console.log("form attempt to submit");
@@ -61,7 +61,7 @@ const Contact = () => {
             <input type="email"id="email" placeholder='Enter your gmail' name="email" required />
             <label htmlFor="message">Write Your Message Here</label>
             <textarea name="message" id="message" rows="8" placeholder='Enter your Message' required ></textarea>
-            <button type="submit" className="contact-submit">Submit now</button>
+            <button type="submit" className="contact-submit"  onMouseEnter={() => cursorEnter("Send It")} onMouseLeave={cursorLeave}>Submit now</button>
         </form>
       </div>
       </div>

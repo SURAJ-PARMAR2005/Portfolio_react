@@ -25,7 +25,7 @@ const Hero = ({cursorEnter,cursorLeave}) => {
       <div className="profile_wrapper"> <img src={assets.profile_img} alt=" " className="profile_img" /></div>
      
       <h1><span className='animate'>I'm Suraj Parmar,</span>Full Stack Developer Based In India.</h1>
-      <p>I am a student at G.L.BAJAJ Insitute of technology and management.</p>
+      <p>I am a student at G.L.BAJAJ Insitute of Technology and Management.</p>
       <div className="hero-action">
         <div className="hero-connect" onMouseEnter={() => cursorEnter("Github Profile")} onMouseLeave={cursorLeave}  >
             {/* <AnchorLink className='anchor-link' offset={50} href='#contact'>Contact With Me</AnchorLink> */}

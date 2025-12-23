@@ -34,7 +34,7 @@ const Navbar = ({cursorEnter,cursorLeave}) => {
 
   return (
     <div className='navbar'>
-        <img src={assets.logo} className='nav-logo' alt=" " />
+        <img src={assets.logoNew} className='nav-logo' alt=" " />
         <img src={assets.menu_open}  onClick={openMenu} alt="" className='nav-mob-open' />
         <ul ref={menuRef}  className='nav-menu'>
           <img src={assets.menu_close} onClick={closeMenu} className='nav-mob-close' alt="" />

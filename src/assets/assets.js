@@ -12,8 +12,7 @@ import underline from './nav_underline.svg';
 import resume from './resume.pdf'
 import menu_open from "./menu_open.svg";
 import menu_close from "./menu_close.svg";
-
-
+import logoNew from "./logo.png";
 
 export const assets = {
     logo,
@@ -29,5 +28,6 @@ export const assets = {
     resume,
     menu_close,
     menu_open,
-    project3
+    project3,
+    logoNew,
 };

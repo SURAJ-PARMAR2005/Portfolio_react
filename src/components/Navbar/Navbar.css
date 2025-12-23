@@ -6,7 +6,11 @@
 }
 .nav-logo{
     width:100px;
+    background-color:transparent;
+    filter: brightness(0.9);
+    opacity:0.85;
 }
+
 .nav-menu{
     /* font-size:20px; */
     list-style-type:none;

@@ -9,7 +9,7 @@ import mail_icon from './mail_icon.svg';
 import call_icon from "./call_icon.svg";
 import location_icon from './location_icon.svg'
 import underline from './nav_underline.svg';
-import resume from './resume.pdf'
+import resume from './Resume.suraj_updated.pdf'
 import menu_open from "./menu_open.svg";
 import menu_close from "./menu_close.svg";
 import logoNew from "./logo.png";

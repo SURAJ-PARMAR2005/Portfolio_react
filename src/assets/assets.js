@@ -32,4 +32,5 @@ export const assets = {
     menu_open,
     project3,
     logoNew,
+    soloLeveling
 };

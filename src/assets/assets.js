@@ -13,6 +13,8 @@ import resume from './Resume.suraj_updated.pdf'
 import menu_open from "./menu_open.svg";
 import menu_close from "./menu_close.svg";
 import logoNew from "./logo.png";
+import soloLeveling from "./SoloLeveling.png"
+
 
 export const assets = {
     logo,

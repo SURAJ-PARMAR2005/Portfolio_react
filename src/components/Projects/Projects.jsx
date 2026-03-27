@@ -33,6 +33,14 @@ const Projects = ({cursorEnter,cursorLeave}) => {
                     <a href="https://github.com/SURAJ-PARMAR2005/Smart_ClassRoom" className="github" onMouseEnter={() => cursorEnter("See Code")} onMouseLeave={cursorLeave}   >GitHub</a>
                 </div>
             </div>
+               <div className="project">
+                <h2>Solo Leveling System</h2>
+                <img src={assets.soloLeveling} alt="" />
+                <div className="ancher-links">
+                    <a href="https://habbit-tracker-1-bmuo.onrender.com/" className="Live-Demo"  onMouseEnter={() => cursorEnter("Watch Demo")} onMouseLeave={cursorLeave}   >LiveDemo</a>
+                    <a href="https://github.com/SURAJ-PARMAR2005/Habbit_tracker" className="github" onMouseEnter={() => cursorEnter("See Code")} onMouseLeave={cursorLeave}   >GitHub</a>
+                </div>
+            </div>
           
         </div>
       
